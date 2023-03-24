@@ -1,473 +1,505 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Freelar</title>
-	 <meta charset="utf-8"> 
-	 <meta name="viewport" content="width=device-width, initial-scale=1">  
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-	 <link rel="stylesheet" type="text/css" href="galstyle.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="galstyle.css">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-	   <style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: 'Josefin Sans', sans-serif;
+		}
 
-	   	*{
-	   		margin: 0; padding: 0; font-family: 'Josefin Sans', sans-serif;
-	   	}
-	  /* Make the image fully responsive */
-	  .carousel-inner img {
-	    width: 100%;
-	    height: 100%;
-	  }
-.door{
-width:220px;
-height:220px;
-margin-left:65px;
-background-color:white;
-border-radius:50%;
-border:2px solid #f1f1f1;
+		/* Make the image fully responsive */
+		.carousel-inner img {
+			width: 100%;
+			height: 100%;
+		}
 
-}
+		.door {
+			width: 220px;
+			height: 220px;
+			background-color: white;
+			border-radius: 50%;
+			border: 2px solid #f1f1f1;
 
-.middle{
-  
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  text-align: center;
-}
-.btn1{
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  background: #f1f1f1;
-  margin: 5px;
-  border-radius: 30%;
-  box-shadow: 0 5px 15px -5px #00000070;
-  color: #3498db;
-  overflow: hidden;
-  position: relative;
-}
-.btn1 i{
-  line-height: 50px;
-  font-size:26px;
-  transition: 0.2s linear;
-}
-.btn1:hover i{
-  transform: scale(1.3);
-  color: #f1f1f1;
-}
-.btn1::before{
-  content: "";
-  position: absolute;
-  width: 120%;
-  height: 120%;
-  background: #3498db;
-  transform: rotate(45deg);
-  left: -110%;
-  top:90%;
-  
-}
-.btn1:hover::before{
-  animation: aaa 0.7s 1;
-  top: -10%;
-  left: -10%;
-}
-@keyframes aaa {
-  0%{
-    left: -110%;
-    top: 90%;
-  }50%{
-    left: 10%;
-    top: -30%;
-  }100%{
-    top: -10%;
-    left: -10%;
-  }
-}
+		}
 
-@media screen and (min-width:800px) {
-  .door{
-margin-left:400px;
-  }
-}
+		.middle {
 
-  </style>
-	 
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+			text-align: center;
+		}
+
+		.btn1 {
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			background: #f1f1f1;
+			margin: 5px;
+			border-radius: 30%;
+			box-shadow: 0 5px 15px -5px #00000070;
+			color: #3498db;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.btn1 i {
+			line-height: 50px;
+			font-size: 26px;
+			transition: 0.2s linear;
+		}
+
+		.btn1:hover i {
+			transform: scale(1.3);
+			color: #f1f1f1;
+		}
+
+		.btn1::before {
+			content: "";
+			position: absolute;
+			width: 120%;
+			height: 120%;
+			background: #3498db;
+			transform: rotate(45deg);
+			left: -110%;
+			top: 90%;
+
+		}
+
+		.btn1:hover::before {
+			animation: aaa 0.7s 1;
+			top: -10%;
+			left: -10%;
+		}
+
+		.imgmanage{
+			height: 70%;
+			width: 100%;
+		}
+
+		@keyframes aaa {
+			0% {
+				left: -110%;
+				top: 90%;
+			}
+
+			50% {
+				left: 10%;
+				top: -30%;
+			}
+
+			100% {
+				top: -10%;
+				left: -10%;
+			}
+		}
+
+		@media screen and (min-width:800px) {
+			/* .door {
+				margin-bottom: 400px;
+			} */
+		}
+	</style>
+
 </head>
+
 <body>
-<header>
+	<header>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Freelar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon navbar-light"></span>
-  </button>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">Freelar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon navbar-light"></span>
+			</button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto ">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="about.html">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="apiimagechange/apiimgchange.html">Image Show</a>
-      </li>
-     
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-<div class="container-fluid  mt-3">
-	<div id="demo" class="carousel slide" data-ride="carousel">
-	  <ul class="carousel-indicators">
-	    <li data-target="#demo" data-slide-to="0" class="active"></li>
-	    <li data-target="#demo" data-slide-to="1"></li>
-	    <li data-target="#demo" data-slide-to="2"></li>
-	  </ul>
-	  <div class="carousel-inner">
-	    <div class="carousel-item active">
-	      <img src="images/home2.jpg" alt="Los Angeles" width="1100" height="500">
-	      <div class="carousel-caption">
-	        <h3 class="text-secondary">india</h3>
-	        <p class="text-secondary">We had such a great time in LA!</p>
-	      </div>   
-	    </div>
-	    <div class="carousel-item">
-	      <img src="images/home6.jpg" alt="Chicago" width="1100" height="500">
-	      <div class="carousel-caption">
-	        <h3 class="text-secondary">America</h3>
-	        <p class="text-secondary">Thank you, America!</p>
-	      </div>   
-	    </div>
-	    <div class="carousel-item">
-	      <img src="images/home3.jpg" alt="New York" width="1100" height="600">
-	      <div class="carousel-caption">
-	        <h3 class="text-secondary">New York</h3>
-	        <p class="text-secondary">We love the Big Apple!</p>
-	      </div>   
-	    </div>
-	  </div>
-	  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-	    <span class="carousel-control-prev-icon"></span>
-	  </a>
-	  <a class="carousel-control-next" href="#demo" data-slide="next">
-	    <span class="carousel-control-next-icon"></span>
-	  </a>
-	</div>
-</div>
-</header>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto ">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="apiimagechange/apiimgchange.html">Image Show</a>
+					</li>
 
-
-
-<!-- about us -->
-
-<section>
-
-<div class="container mt-3 text-center">
-	<h1 class="text-center text-capitalize pt-5">about us</h1>
-	<hr class="w-25 mx-auto pt-5">
-
-	<div class="row mb-4">
-		<div class="col-lg-6 col-md-6 col-12"> 
-			<img src="images/about.jpg" class="img-thumbnail " height="300px" width="200px">
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+		<div class="container-fluid  mt-3">
+			<div id="demo" class="carousel slide" data-ride="carousel">
+				<ul class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+				</ul>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="images/s2.jpg" alt="Los Angeles" width="1100" height="500">
+						<div class="carousel-caption">
+							<h3 class="text-secondary">india</h3>
+							<p class="text-secondary">We had such a great time in LA!</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="images/s1.jpg" alt="Chicago" width="1100" height="500">
+						<div class="carousel-caption">
+							<h3 class="text-secondary">America</h3>
+							<p class="text-secondary">Thank you, America!</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="images/android.jpeg" alt="New York" width="1100" height="600">
+						<div class="carousel-caption">
+							<h3 class="text-secondary">New York</h3>
+							<p class="text-secondary">We love the Big Apple!</p>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
 		</div>
+	</header>
 
-		<div class="col-lg-6 col-md-6 col-12 about-part2"> 
-			<h1>Who am I?</h1>
-			<hr>
-			<p>When I was 19 years old I had no idea what I wanted to ‘do with my life’. At the time I was living in an old ways with suitable limited urban places. I didn’t have that much knowledge what going on in this world and business,marketing,Internet,Entrepreneurship and much more.
-</p>
-			<button class="btn bg-primary text-white">Click me</button>
+
+
+	<!-- about us -->
+
+	<section>
+
+		<div class="container mt-3 text-center">
+			<h1 class="text-center text-capitalize pt-5">about us</h1>
+			<hr class="w-25 mx-auto pt-5">
+
+			<div class="row mb-4">
+				<div class="col-lg-6 col-md-6 col-12">
+					<img src="images/ankit.jpg" class="img-thumbnail " height="300px" width="200px">
+				</div>
+
+				<div class="col-lg-6 col-md-6 col-12 about-part2">
+					<h1>Who am I?</h1>
+					<hr>
+					<p>When I was 21 years old I had no idea what I wanted to ‘do with my life’. At the time I was
+						living in an old ways with suitable limited urban places. I didn’t have that much knowledge what
+						going on in this world and business,marketing,Internet,Entrepreneurship and much more.
+					</p>
+					<button class="btn bg-primary text-white">Click me</button>
+				</div>
+			</div>
+
 		</div>
-	</div>
-
-</div>
-</section>
-
-
-	
-
-<!-- about us end -->
-
-<!-- service part -->
-<section>
-<div class="container mt-3">
-	<h1 class="text-center text-capitalize pt-5">Services</h1>
-	<hr class="w-25 mx-auto pt-5">
+	</section>
 
 
 
-<div class="row text-center mb-5">
-	<div class="col-lg-4 col-md-4 col-12 card-part1 mt-3"> 
-		<div class="card" >
-		  <img class="card-img-top" src="images/ser1.jpg" alt="Card image">
-		  <div class="card-body">
-		    <h4 class="card-title">Machine Learning</h4>
-		    <p class="card-text">Some example text.</p>
-		    <a href="#" class="btn btn-primary">See Profile</a>
-		  </div>
+
+	<!-- about us end -->
+
+	<!-- service part -->
+	<section>
+		<div class="container mt-3">
+			<h1 class="text-center text-capitalize pt-5">Services</h1>
+			<hr class="w-25 mx-auto pt-5">
+
+
+
+			<div class="row text-center mb-5">
+				<div class="col-lg-4 col-md-4 col-12 card-part1 mt-3">
+					<div class="card">
+						<img class="card-img-top imgmanage" src="images/ser1.jpg" alt="Card image">
+						<div class="card-body">
+							<h4 class="card-title">Machine Learning</h4>
+							<p class="card-text">Some example text.</p>
+							<a href="#" class="btn btn-primary">See Profile</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-12 card-part2 mt-3">
+					<div class="card">
+						<img class="card-img-top imgmanage" src="images/ser2.jpg" alt="Card image">
+						<div class="card-body">
+							<h4 class="card-title">Marketing</h4>
+							<p class="card-text">Some example</p>
+							<a href="#" class="btn btn-primary">See Profile</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-12 card-part3 mt-3">
+					<div class="card">
+						<img class="card-img-top imgmanage" src="images/ser3.jpg" alt="Card image">
+						<div class="card-body">
+							<h4 class="card-title">Marketing</h4>
+							<h4 class="card-title"></h4>
+							<p class="card-text">Business</p>
+							<a href="#" class="btn btn-primary">See Profile</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	</section>
+
+	<!-- service end -->
+
+	<!-- contact demo -->
+
+	<section class="bg-primary mt-3">
+
+		<article class="py-5 text-center text-white">
+			<div>
+				<h3 class="display-4 ">+91 9468523633</h3>
+				<p>If you want best serive Call us now.</p>
+				<button class="btn btn-warning">Contact Now</button>
+			</div>
+		</article>
+	</section>
+
+	<!-- contact demo end -->
+
+
+	<!-- gallery start -->
+	<section>
+		<div class="container ">
+			<h1 class="text-center text-capitalize pt-5">Gallery</h1>
+			<hr class="w-25 mx-auto pt-5">
+
+
+			<div class="row text-center">
+				<div class="col-lg-4 col-md-3 col-12 mb-4 gal-animated gal-part1">
+					<img src="images/gal1.jpg" class="img-fluid" height="300px" width="200px">
+				</div>
+				<div class="col-lg-4 col-md-3 col-12 mb-4 gal-animated gal-part2">
+					<img src="images/gal2.jpg" class="img-fluid" height="300px" width="200px">
+				</div>
+				<div class="col-lg-4 col-md-3 col-12 mb-4 gal-animated gal-part3">
+					<img src="images/gal3.jpg" class="img-fluid" height="300px" width="200px">
+				</div>
+				<div class="col-lg-4 col-md-3 col-12 mb-4 gal-animated gal-part4">
+					<img src="images/gal4.jpg" class="img-fluid" height="300px" width="200px">
+				</div>
+				<div class="col-lg-4 col-md-3 col-12 mb-4 gal-animated gal-part5">
+					<img src="images/gal5.jpg" class="img-fluid" height="300px" width="200px">
+				</div>
+				<div class="col-lg-4 col-md-3 col-12 mb-4 gal-animated gal-part6">
+					<img src="images/gal6.jpg" class="img-fluid" height="300px" width="200px">
+				</div>
+
+
+			</div>
 		</div>
+	</section>
+
+	<!-- gallery end -->
+
+
+	<!-- register form in short -->
+
+	<section class="bg-primary">
+
+		<article class="py-5 ">
+			<div class="text-center text-white">
+				<h3 class="display-4 ">Want To Join</h3>
+				<p>Be a part of Freelar Family</p>
+				<button class="btn btn-warning" data-toggle="modal" data-target="#myModal">Join Now</button>
+			</div>
+
+
+			<!-- The Modal -->
+			<div class="modal fade" id="myModal">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+
+						<!-- Modal Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Singup</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+
+						<!-- Modal body -->
+						<div class="modal-body">
+							<form action="/action_page.php">
+								<div class="form-group">
+									<label for="email">Email address:</label>
+									<input type="email" class="form-control" id="email" autocomplete="off">
+								</div>
+								<div class="form-group">
+									<label for="pwd">Password:</label>
+									<input type="password" class="form-control" id="pwd">
+								</div>
+								<div class="form-group form-check">
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox"> Remember me
+									</label>
+								</div>
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</form>
+						</div>
+
+						<!-- Modal footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</article>
+	</section>
+
+
+	<!-- resister ends -->
+
+
+	<div class="containter scrolltop float-right pr-5">
+		<i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"> </i>
 	</div>
 
-		<div class="col-lg-4 col-md-4 col-12 card-part2 mt-3"> 
-		<div class="card" >
-		  <img class="card-img-top" src="images/ser2.jpg" alt="Card image">
-		  <div class="card-body">
-		    <h4 class="card-title">Marketing</h4>
-		    <p class="card-text">Some example</p>
-		    <a href="#" class="btn btn-primary">See Profile</a>
-		  </div>
-		</div>
-	</div>
-
-		<div class="col-lg-4 col-md-4 col-12 card-part3 mt-3"> 
-		<div class="card" >
-		  <img class="card-img-top" src="images/ser3.jpg" alt="Card image">
-		  <div class="card-body">
-		    <h4 class="card-title"></h4>
-		    <p class="card-text">Business</p>
-		    <a href="#" class="btn btn-primary">See Profile</a>
-		  </div>
-		</div>
-	</div>
-</div>
-
-</section>
-
-<!-- service end -->
-
-<!-- contact demo -->
-
-<section class="bg-primary mt-3">
-	
-	<article class="py-5 text-center text-white">
-		<div>
-			<h3 class="display-4 ">+91 9468523633</h3>
-			<p>If you want best serive Call us now.</p>
-			<button class="btn btn-warning">Contact Now</button>
-		</div>
-	</article>
-</section>
-
-<!-- contact demo end -->
-
-
-<!-- gallery start -->
-<section>
-<div class="container ">
-	<h1 class="text-center text-capitalize pt-5">Gallery</h1>
-	<hr class="w-25 mx-auto pt-5">
-
-
-<div class="row text-center">
-	<div class="col-lg-4 col-md-3 col-12 mb-4 gal-animated gal-part1"> 
-		<img src="images/gal1.jpg" class="img-fluid" height="300px" width="200px">
-	</div>
-	<div class="col-lg-4 col-md-3 col-12 mb-4 gal-animated gal-part2"> 
-		<img src="images/gal2.jpg" class="img-fluid" height="300px" width="200px">
-	</div>
-	<div class="col-lg-4 col-md-3 col-12 mb-4 gal-animated gal-part3"> 
-		<img src="images/gal3.jpg" class="img-fluid" height="300px" width="200px">
-	</div>
-	<div class="col-lg-4 col-md-3 col-12 mb-4 gal-animated gal-part4"> 
-		<img src="images/gal4.jpg" class="img-fluid" height="300px" width="200px">
-	</div>
-	<div class="col-lg-4 col-md-3 col-12 mb-4 gal-animated gal-part5"> 
-		<img src="images/gal5.jpg" class="img-fluid" height="300px" width="200px">
-	</div>
-	<div class="col-lg-4 col-md-3 col-12 mb-4 gal-animated gal-part6"> 
-		<img src="images/gal6.jpg" class="img-fluid" height="300px" width="200px">
-	</div>
-
-
-</div>
-</div>
-</section>
-
-<!-- gallery end -->
-
-
-<!-- register form in short -->
-
-<section class="bg-primary">
-	
-	<article class="py-5 ">
-		<div class="text-center text-white">
-			<h3 class="display-4 ">Want To Join</h3>
-			<p>Be a part of Freelar Family</p>
-			<button class="btn btn-warning" data-toggle="modal" data-target="#myModal">Join Now</button>
-		</div>
-
-
-		 <!-- The Modal -->
-  <div class="modal fade" id="myModal">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Singup</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-	 	<form action="/action_page.php">
-			  <div class="form-group">
-			    <label for="email">Email address:</label>
-			    <input type="email" class="form-control" id="email" autocomplete="off">
-			  </div>
-			  <div class="form-group">
-			    <label for="pwd">Password:</label>
-			    <input type="password" class="form-control" id="pwd">
-			  </div>
-			  <div class="form-group form-check">
-			    <label class="form-check-label">
-			      <input class="form-check-input" type="checkbox"> Remember me
-			    </label>
-			  </div>
-			  <button type="submit" class="btn btn-primary">Submit</button>
-			</form>
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-
-	</article>
-</section>
-
-
-<!-- resister ends -->
-
-<!-- contact us start -->
-<section>
-<div class="container mb-5">
-	<h1 class="text-center text-capitalize pt-5">Conatct Us</h1>
-	<hr class="w-25 mx-auto pt-5">
-
-	<div class="w-50 mx-auto">
-		<form action="#">
-		  <div class="form-group">
-		    <label for="email">Your Name</label>
-		    <input type="text" class="form-control" id="email" autocomplete="off" placeholder="enter ur name">
-		  </div>
-		  <div class="form-group">
-		    <label for="pwd">Email:</label>
-		    <input type="email" class="form-control" id="pwd">
-		  </div>
-
-		   <div class="form-group">
-		    <label for="pwd">Mobile No.:</label>
-		    <input type="number" class="form-control" id="pwd">
-		  </div>
-
-		  <div class="form-group">
-		  	<label> Textarea </label>
-		  	<textarea class="form-control"></textarea>
-		  </div>
-
-		  <div class="form-group form-check">
-		    <label class="form-check-label">
-		      <input class="form-check-input" type="checkbox"> Remember me
-		    </label>
-		  </div>
-		  <button type="submit" class="btn btn-primary">Submit</button>
-		</form>
-	</div>
-</div>
-</section>
-<div class="containter scrolltop float-right pr-5">
-	<i class="fa fa-arrow-up"  onclick="topFunction()" id="myBtn" > </i> 
-</div>
-<!-- footer -->
-
-<img class="door" src="images/photo.jpg">
-<p class="text-center text-uppercase text-striped" >Ankitsharma<br>
+	<div class="text-center my-2">
+		<img class="door mb-3" src="images/ankit.jpg"">
+		<p class=" text-uppercase text-striped">Ankitsharma<br>
 		Full Stack Developer
- <hr>
-<p class="text-uppercase text-center ">Following</p></br></br>
-<div class="middle">
-      <a class="btn1" href="https://www.facebook.com/profile.php?id=100014681208276">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a class="btn1" href="https://twitter.com/AnkitSh27182372?s=08">
-        <i class="fab fa-twitter"></i>
-      </a>
-      
-      <a class="btn1" href="https://www.instagram.com/ankit944sharma/">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a class="btn1" href="https://www.youtube.com/channel/UCcz1MCetxHWCSJF52oyivJQ">
-        <i class="fab fa-youtube"></i>
-      </a>
-      <a class="btn1" href="#">
-        <i class="fab fa-google"></i>
-      </a>
-    </div><br><br>
-<footer>
-	
-	<p class="text-center bg-dark text-white  mb-0"> @copyright Freelar.com 2020 </p>
+	</div>
 
-</footer>
+	<hr>
+	<p class="text-uppercase text-center ">Following</p></br></br>
+	<div class="middle">
+		<a class="btn1" href="https://www.facebook.com/profile.php?id=100014681208276">
+			<i class="fab fa-facebook-f"></i>
+		</a>
+		<a class="btn1" href="https://twitter.com/AnkitSh27182372?s=08">
+			<i class="fab fa-twitter"></i>
+		</a>
+
+		<a class="btn1" href="https://www.instagram.com/ankit944sharma/">
+			<i class="fab fa-instagram"></i>
+		</a>
+		<a class="btn1" href="https://www.youtube.com/channel/UCcz1MCetxHWCSJF52oyivJQ">
+			<i class="fab fa-youtube"></i>
+		</a>
+		<a class="btn1" href="#">
+			<i class="fab fa-google"></i>
+		</a>
+	</div><br><br>
+
+	<!-- contact us start -->
+	<section>
+		<div class="container mb-5">
+			<h1 class="text-center text-capitalize pt-5">Conatct Us</h1>
+			<hr class="w-25 mx-auto pt-5">
+
+			<div class="w-50 mx-auto">
+				<form action="#">
+					<div class="form-group">
+						<label for="email">Your Name</label>
+						<input type="text" class="form-control" id="email" autocomplete="off"
+							placeholder="enter ur name">
+					</div>
+					<div class="form-group">
+						<label for="pwd">Email:</label>
+						<input type="email" class="form-control" id="pwd">
+					</div>
+
+					<div class="form-group">
+						<label for="pwd">Mobile No.:</label>
+						<input type="number" class="form-control" id="pwd">
+					</div>
+
+					<div class="form-group">
+						<label> Textarea </label>
+						<textarea class="form-control"></textarea>
+					</div>
+
+					<div class="form-group form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox"> Remember me
+						</label>
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- footer -->
+	<footer>
+
+		<p class="text-center bg-dark text-white  mb-0"> @copyright Freelar.com 2023 </p>
+
+	</footer>
 
 
- 
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+		integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+		integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 
 
 
-<script>
+	<script>
 
 
 
-					$('.count').counterUp({
-					  		delay:10,
-					  		time:300
-					   	})
+		$('.count').counterUp({
+			delay: 10,
+			time: 300
+		})
 
-					//************ top arrow script ***************
+		//************ top arrow script ***************
 
-					mybutton = document.getElementById("myBtn");
-					// When the user scrolls down 20px from the top of the document, show the button
-					window.onscroll = function() {scrollFunction()};
-					function scrollFunction() {
-					if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-					mybutton.style.display = "block";
-					} else {
-					mybutton.style.display = "none";
-					}
-					}
+		mybutton = document.getElementById("myBtn");
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function () { scrollFunction() };
+		function scrollFunction() {
+			if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
 
-					// When the user clicks on the button, scroll to the top of the document
-					function topFunction() {
-					document.body.scrollTop = 0; // For Safari
-					document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-					}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
 
-			
+
 		// var waypoint = new Waypoint({
 		// element: document.getElementById('thing'),
 		// handler: function(direction) {
@@ -476,52 +508,53 @@ margin-left:400px;
 		// })
 
 
-		$(document).ready(function(){
+		$(document).ready(function () {
 
-			$('.about-part1').waypoint(function(direction){
+			$('.about-part1').waypoint(function (direction) {
 				$('.about-part1').addClass('animated zoomIn')
-			},{
-				offset:'50%'
+			}, {
+				offset: '50%'
 			});
 
-			$('.about-part2').waypoint(function(direction){
+			$('.about-part2').waypoint(function (direction) {
 				$('.about-part2').addClass('animated bounceInUp')
-			},{
-				
-				offset:'50%'
+			}, {
+
+				offset: '50%'
 			});
 
 
-			$('.card-part1').waypoint(function(direction){
+			$('.card-part1').waypoint(function (direction) {
 				$('.card-part1').addClass('animated zoomIn')
-			},{
-				
-				offset:'50%'
+			}, {
+
+				offset: '50%'
 			});
 
 
-			$('.card-part2').waypoint(function(direction){
+			$('.card-part2').waypoint(function (direction) {
 				$('.card-part2').addClass('animated zoomIn')
-			},{
-				
-				offset:'50%'
+			}, {
+
+				offset: '50%'
 			});
 
-			$('.card-part3').waypoint(function(direction){
+			$('.card-part3').waypoint(function (direction) {
 				$('.card-part3').addClass('animated zoomIn')
-			},{
-				
-				offset:'50%'
+			}, {
+
+				offset: '50%'
 			});
 
-$('.gal-animated').waypoint(function(direction){
+			$('.gal-animated').waypoint(function (direction) {
 				$('.gal-animated').addClass('animated zoomIn')
-			},{
-				
-				offset:'50%'
+			}, {
+
+				offset: '50%'
 			});
 		});
-	
-</script>
+
+	</script>
 </body>
+
 </html>
